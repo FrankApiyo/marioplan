@@ -6,6 +6,7 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import ProjectDetails from './Components/Projects/ProjectDetails';
 import SignIn from './Components/Auth/Signin'
 import SignUp from './Components/Auth/SignUp'
+import CreateProject from './Components/Projects/CreateProject';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/project/:id' component={ProjectDetails}/>
         <Route exact path='/signin' component={SignIn} />
         <Route exact path='/signup' component={SignUp} />
+        <Route exact path='/create' component={CreateProject} />
       </Switch>
     </div>
     </BrowserRouter>
