@@ -15,7 +15,7 @@ const projectReducer = (state = initState, action) => {
             console.log("create project error ", action.err);
             break;
         default: 
-            console.log("did nothing");
+            console.log("did nothing", action);
     }
     return state;
 }
